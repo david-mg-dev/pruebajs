@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="addtask">
+        <h2>task</h2>
+        <input type="text" id="taskId">
+        <h2>time</h2>
+        <input type="text" id="timeId">
+    </div>
+    <section class="task">
+        <div class="noStatus">
+            <button onclick="addTaskNoStatus()" id="NoStatus">Add No Status</button>
+            <ul id="ulTaskNoStatus">No Status</ul>
+        </div>
+        <div class="inProgress">
+            <button onclick="addTaskInProgress()" id="InProgress">Add In Progress</button>
+            <ul id="ulTaskInProgress">In Progress</ul>
+        </div>
+        <div class="pending">
+            <button onclick="addTaskPending()" id="Pending">Add Pending</button>
+            <ul id="UlTaskPending">Pending</ul>
+        </div>
+        <div class="completed">
+            <button onclick="addTaskCompleted()" id="Completed">Add Completed</button>
+            <ul id="UlTaskCompleted">Completed</ul>
+        </div>
+
+        <button onclick="addTask()"></button>
+    </section>
+
+    <!--<button onclick="removeTask()">Remove Task</button>-->
+</body>
+
+<script src="main.js" type="text/javascript"></script>
+
+</html>
